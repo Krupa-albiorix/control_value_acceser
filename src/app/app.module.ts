@@ -12,12 +12,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OverlayExampleComponent } from './form-control/overlay-example/overlay-example.component';
+// import { FileUploadComponent } from './form-control/lock-input/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OverlayExampleComponent,
-    LockInputComponent
+    LockInputComponent,
+    // FileUploadComponent
   ],
   imports: [
     BrowserModule,
