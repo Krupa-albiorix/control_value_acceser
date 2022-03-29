@@ -5,7 +5,8 @@
         <input matInput formControlName="name" name="no-name">
     </mat-form-field><br>
 
-    <!-- <app-file-upload formControlName="image"></app-file-upload> -->
+    <app-file-upload formControlName="image"></app-file-upload>
+    <div *ngIf="form.controls['image'].errors?.['requiredFileType']">Invalid image.</div>
 
     <app-lock-input formControlName="isLocked"></app-lock-input><pre></pre>
     <button [disabled]="!form.touched" mat-stroked-button (click)="onSubmit()">
