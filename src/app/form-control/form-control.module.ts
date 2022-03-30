@@ -7,7 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 
@@ -23,7 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatInputModule,
     ReactiveFormsModule,
-    
+    MatDatepickerModule
   ]
 })
 export class FormControlModule { }

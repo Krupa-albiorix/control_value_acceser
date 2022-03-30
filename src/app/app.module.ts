@@ -8,18 +8,23 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OverlayExampleComponent } from './form-control/overlay-example/overlay-example.component';
 import { FileUploadComponent } from './form-control/file-upload/file-upload.component';
+import { DateInputComponent } from './form-control/date-input/date-input.component';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     OverlayExampleComponent,
     LockInputComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    DateInputComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import { FileUploadComponent } from './form-control/file-upload/file-upload.comp
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

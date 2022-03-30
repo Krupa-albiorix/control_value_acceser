@@ -6,7 +6,18 @@
     </mat-form-field><br>
 
     <app-file-upload formControlName="image"></app-file-upload>
-    <div *ngIf="form.controls['image'].errors?.['requiredFileType']">Invalid image.</div>
+    <div *ngIf="form.controls['image'].errors?.['requiredFileType']">Invalid image.</div><pre></pre>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <code>
+        <b>Control Value: </b>{{ date!.value }}
+    </code>
 
     <app-lock-input formControlName="isLocked"></app-lock-input><pre></pre>
     <button [disabled]="!form.touched" mat-stroked-button (click)="onSubmit()">
